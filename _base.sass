@@ -1,26 +1,38 @@
-/* BASE */
-
-// *non-project-specific* styles and mixins
-
-@import compass
+@import normalize
 @import susy
+
+/* KIT BASE */
+
+
+
+// Mixins
+// ______
 
 =hide
 	display: none
-=hide-visually
+
+//=hide-visually
+
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+// $extra can be set to deal with element's padding if necessary
 =hide-text-c($extra:0)
 	text-indent: 120% + $extra
 	white-space: nowrap
 	overflow: hidden
 
-@import basic-base
-@import normalize
+
+
+// Styles
+// ______
 
 //*
 	+box-sizing(border-box)
+
 a:focus
 	outline: 0
+
 form
 	margin: 1em 0
+
 fieldset
 	margin: 0
