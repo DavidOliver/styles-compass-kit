@@ -1,0 +1,26 @@
+/* BASE */
+
+// *non-project-specific* styles and mixins
+
+@import compass
+@import susy
+
+=hide
+	display: none
+=hide-visually
+=hide-text-c($extra:0)
+	text-indent: 120% + $extra
+	white-space: nowrap
+	overflow: hidden
+
+@import basic-base
+@import normalize
+
+//*
+	+box-sizing(border-box)
+a:focus
+	outline: 0
+form
+	margin: 1em 0
+fieldset
+	margin: 0
