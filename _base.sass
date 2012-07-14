@@ -5,6 +5,14 @@
    Kit mixins and styles to be @extend'ed
    ========================================================================== */
 
+=respond($min-width, $media-types:all)
+	@if $media-types != 'all'
+		@media #{$media-types} and (min-width: $min-width)
+			@content
+	@else
+		@media (min-width: $min-width)
+			@content
+
 =hide
 	display: none
 
