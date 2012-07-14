@@ -5,8 +5,8 @@
    Kit mixins and styles to be @extend'ed
    ========================================================================== */
 
-=respond-to-width($min-width, $width-type:min)
-	@media (#{$width-type}-width: $min-width)
+=respond-to-width($width, $width-type:min)
+	@media (#{$width-type}-width: $width)
 		@content
 
 =hide
