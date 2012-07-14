@@ -13,7 +13,10 @@
 	white-space: nowrap
 	overflow: hidden
 
-//.hide-visually
+=hide-visually($amount:9999px)
+	position: absolute
+	top: -$amount
+	left: -$amount
 
 .hidden
 	display: none
