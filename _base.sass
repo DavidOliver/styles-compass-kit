@@ -4,6 +4,15 @@
 /* =============================================================================
    Kit mixins and styles to be @extend'ed                                     */
 
+=set-html-base-font-size
+	@if $set-html-base-font-size == true
+		html
+			font-size: $px-base-font-size
+
+=font-size-rem($rem)
+	font-size: floor($px-base-font-size * $rem)
+	font-size: #{$rem}rem
+
 =respond-to-width($width, $width-type:min)
 	@media (#{$width-type}-width: $width)
 		@content
@@ -18,16 +27,11 @@
 
 =hide-text-c($extra:0)
 	// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
-	// $extra can be set to deal with element's padding if necessary
+	// $extra can be set to deal with element’s padding if necessary
 	display: inline-block
 	text-indent: 120% + $extra
 	white-space: nowrap
 	overflow: hidden
-
-=font-size-rem($rem)
-	// depends on $px-base-font-size in project _basics
-	font-size: floor($px-base-font-size * $rem)
-	font-size: #{$rem}rem
 
 .small
 	font-size: 75%

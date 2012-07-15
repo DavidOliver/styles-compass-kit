@@ -1,7 +1,9 @@
 /* =============================================================================
    Kit styles (some values may be overridden by project _base)                */
 
+$set-html-base-font-size: false !default
 $px-base-font-size: 16px !default
+
 $font-stack-main: sans-serif !default
 
 $color-background: white !default
@@ -11,12 +13,11 @@ $color-anchor: blue !default
 $break1: 40em !default
 $break2: 80em !default
 
-html
-	font-size: $px-base-font-size
++set-html-base-font-size
 
-// not sure about using this globally yet
+// Not sure about using this globally yet
 //*
-	+box-sizing(border-box)
+//	+box-sizing(border-box)
 
 body
 	padding: 1em
