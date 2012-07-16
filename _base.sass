@@ -7,7 +7,11 @@
 =set-html-base-font-size
 	@if $set-html-base-font-size == true
 		html
-			font-size: $px-base-font-size
+			font-size: $base-font-size
+=set-html-baseline-grid
+	@if $set-html-baseline-grid == true
+		html
+			line-height: $baseline-grid-size
 
 =font-size-rem($rem)
 	font-size: floor($px-base-font-size * $rem)
