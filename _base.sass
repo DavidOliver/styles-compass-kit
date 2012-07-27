@@ -17,6 +17,15 @@
 	font-size: floor($px-base-font-size * $rem)
 	font-size: #{$rem}rem
 
+=zero-font-size
+	font-size: 0
+	& > *
+		font-size: $base-font-size
+
+=susy-to-inline-block
+	float: none
+	display: inline-block
+
 =respond-to-width($width, $width-type:min)
 	@media (#{$width-type}-width: $width)
 		@content
