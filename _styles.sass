@@ -48,19 +48,26 @@ th, td
 	padding-right: 1em
 
 form
+	margin: 1em 0
 	ol
 		list-style-type: none
 		padding-left: 0
 	li
 		margin-bottom: 1em
-	label
-		display: block
-
-form
-	margin: 1em 0
-
 fieldset
 	margin: 0
+label
+	display: block
+input[type=text],
+textarea
+	+box-sizing(border-box)
+	width: 100%
+input[type=text],
+textarea,
+button
+	font-family: $font-stack-main
+input[type=checkbox]
+	margin-right: .5em
 
 nav
 	ul,
