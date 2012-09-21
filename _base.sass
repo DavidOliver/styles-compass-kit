@@ -19,12 +19,12 @@
 
 =zero-font-size
 	font-size: 0
-	& > *
+	& > p, li
 		font-size: $base-font-size
 
 =susy-to-inline-block
-	float: none
-	display: inline-block
+	float: none !important
+	display: inline-block !important
 
 =respond-to-width($width, $width-type:min)
 	@media (#{$width-type}-width: $width)
