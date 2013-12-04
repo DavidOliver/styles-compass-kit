@@ -1,6 +1,8 @@
 // ========================================================================== */
 // Kit styles (some values may be overridden by project _base)                */
 
+$body-padding: 1em !default
+
 $set-html-base-font-size: false !default
 $base-font-size: 16px !default
 
@@ -24,7 +26,7 @@ $break2: 80em !default
 //	+box-sizing(border-box)
 
 body
-	padding: 1em
+	padding: $body-padding
 	background-color: $color-background
 	color: $color-content
 	font-family: $font-stack-main
